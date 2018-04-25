@@ -95,7 +95,7 @@ class Reservoir(object):
                 keep = np.random.uniform(size=1) <= p
 
                 if keep:
-                    swap_index = int(np.random.choice(range(self.size), 1))
+                    swap_index = int(np.random.choice(range(self.size)))
                     self._samples[swap_index] = item
 
     def reset(self):
