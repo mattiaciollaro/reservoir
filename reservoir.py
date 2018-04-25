@@ -180,7 +180,7 @@ if __name__ == "__main__":
         reservoir.seen = 100
         print("This test didn't pass")
     except AttributeError:
-        print("Caught trying to set size!")
+        print("Caught trying to set seen!")
 
     print("===== passing a non iterable test =====")
     try:
