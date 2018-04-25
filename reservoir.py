@@ -85,17 +85,17 @@ class Reservoir(object):
             # while the length of the stream is less
             # then the number of samples requested,
             # simply store data as they come
-            if self._seen <= self.size:
-                self.samples.append(item)
+            if self._seen <= self._size:
+                self._samples.append(item)
             else:
                 # probability of acceptance
-                p = float(self.size / self._seen)
+                p = float(self._size / self._seen)
 
                 # keep or discard
                 keep = np.random.uniform(size=1) <= p
 
                 if keep:
-                    swap_index = int(np.random.choice(self.size))
+                    swap_index = int(np.random.choice(self._size))
                     self._samples[swap_index] = item
 
     def reset(self):
