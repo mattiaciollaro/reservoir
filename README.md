@@ -1,2 +1,3 @@
 # reservoir
-An implementation of a reservoir sampler.
+
+Just an implementation of a reservoir sampler!
