@@ -27,7 +27,7 @@ Python generator).
 
 ```python
 # simulate a stream
-stream_one = (n for n in range(1000000))
+stream_one = range(1000000)
 ```
 
 The sampling is performed with
@@ -65,7 +65,7 @@ If more data is flowing in, you can easily resume the sampling process:
 
 ```python
 # simulate another stream
-stream_two = (n for n in range(1000000, 1500000))
+stream_two = range(1000000, 1500000)
 
 # resume the sampling
 reservoir.sample(gen=stream_two)
