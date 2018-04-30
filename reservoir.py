@@ -118,7 +118,7 @@ if __name__ == "__main__":
     reservoir = Reservoir(size=10)
 
     print("\nA stream is coming!")
-    stream_one = (n for n in range(1000000))
+    stream_one = range(1000000)
 
     print("\nSampling 10 items from the first stream...")
     reservoir.sample(stream_one, seed=0)
@@ -129,7 +129,7 @@ if __name__ == "__main__":
     print(reservoir.samples)
 
     print("\nWhoa! Another stream is coming!")
-    stream_two = (n for n in range(1000000, 1500000))
+    stream_two = range(1000000, 1500000)
 
     print("\nKeep on sampling!")
     reservoir.sample(stream_two)
