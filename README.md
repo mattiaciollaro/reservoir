@@ -8,7 +8,7 @@ Just an implementation of [reservoir sampling](https://en.wikipedia.org/wiki/Res
 
 ## Usage
 
-Instantiate a reservoir with:
+Instantiate a reservoir with
 
 ```python
 from reservoir import Reservoir
