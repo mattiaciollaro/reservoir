@@ -1,6 +1,6 @@
 # reservoir
 
-Just an implementation of [reservoir sampling](https://en.wikipedia.org/wiki/Reservoir_sampling)!
+Just an implementation of [reservoir sampling](https://mattiaciollaro.github.io/brews/a-surprisingly-uniform-body-of-water)!
 
 ## Depends on
 
