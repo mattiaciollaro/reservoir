@@ -1,4 +1,4 @@
-#! /usr/bin/env python3
+#!/usr/bin/env python3
 import numpy as np
 
 
@@ -29,6 +29,7 @@ class Reservoir(object):
     """
     Implementation of reservoir sampling.
     """
+
     def __init__(self, size):
         # check that size is an integer
         _check_int(size, "size")
